@@ -91,6 +91,9 @@ export async function NewSave(context, content, sheet, tab) {
 
   try {
     if (context == null || content == null) throw new Error("context and content are required");
+    if (context == "Add New Tab" && content === "" || context == "content" && context === null ) {return}
+    if (context == "New Tab" && content === "") {return}
+    if (context == "" && content === "") {return}
 
     // Ensure headers exist: TempID | Context | Content
     const headerUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(`${TAB}!A1:C1`)}`;
@@ -182,6 +185,8 @@ export async function updateEntryByTempID(tempid, context, content, sheet, tab) 
 
   try {
     if (tempid === undefined || tempid === null) throw new Error("tempid_required");
+
+    if (tempid === -10) throw new Error("New entry");
 
     // Ensure headers exist (optional but keeps sheet consistent)
     const headerUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(`${TAB}!A1:C1`)}`;

@@ -8,7 +8,8 @@
     //On close window - auto save all - Can't do because of request limits
     //Save-state indicator check
     //Hotkey for save
-//Permanent Documents - //Seperate load sections, //Seperate Save Destinations, //Selection
+//Permanent Documents - //Seperate load sections, //Seperate Save Destinations, //Selection, //Add new tab
 //Files, Snapshots / photos - Not necessary just use google drive
+//Mobile Version
 
-Mobile Version
+Make prettier if time, done for now!

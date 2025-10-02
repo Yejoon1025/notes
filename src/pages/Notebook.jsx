@@ -77,7 +77,8 @@ const handleSelectPick = (_idx, row) => {
   const idNum = Number(tempid);
 
   // Ignore bad rows
-  if (!Number.isFinite(idNum) || idNum <= 0) {
+  if (idNum === -10){}
+  else if(!Number.isFinite(idNum) || idNum <= 0) {
     closeSelect();
     return;
   }
@@ -191,7 +192,12 @@ const handleSelectPick = (_idx, row) => {
 
     const rows = await exportEntries(sheet, tabName);
 
-    setSelectRows(Array.isArray(rows) ? rows : []);
+    const additionalRows = [[-10,"Add New Tab", ""]];
+
+      const combinedRows = Array.isArray(rows) ? [...rows, ...additionalRows] : [...additionalRows];
+
+    // Set the state
+    setSelectRows(combinedRows);
 
     openSelect()
   };
@@ -478,7 +484,7 @@ useEffect(() => attachSaveHotkey(saveActiveToStore), [saveActiveToStore]);
   return (
     <div
       style={{
-        minHeight: "100vh",
+        height: "100%",
         background:
           "radial-gradient(1200px 700px at 50% -100px, rgba(255,255,255,0.08), transparent 60%), linear-gradient(180deg, #0f1115, #141821)",
         color: "#eaeef3",
