@@ -1,0 +1,8 @@
+export const Jounal = ["Journal","1-YqJWBVk2aV88ZYN-WVge9d-jLrCmZEg8rc5eDNYdQg", "Sheet1"]
+export const Econ = ["Economics", "1HySbCXZD84-0M-DfEJVCDyUxPFLLJe8V-D29_pueELs", "Sheet1"]
+export const Markov = ["Markov Chains", "1bc7HzMsUIlcnKf7O4cvhn6kfffTzcY37I9vGIsihjeQ", "Markov"]
+export const LinAlg = ["Linear Algebra", "1bc7HzMsUIlcnKf7O4cvhn6kfffTzcY37I9vGIsihjeQ", "LinAlg"]
+export const Stats = ["Statistics", "1bc7HzMsUIlcnKf7O4cvhn6kfffTzcY37I9vGIsihjeQ", "Stats"]
+export const Numerical = ["Numerical Analysis", "1bc7HzMsUIlcnKf7O4cvhn6kfffTzcY37I9vGIsihjeQ", "Numerical Analysis"]
+export const Brain = ["Brain Biology", "1YZoBQB5Tm_XfS-j3dwSLDB8Bf8X8HJOpkNQS8JqCwos", "Sheet1"]
+export const Test = ["Test","147goUZH-YWpsuusg0qqBTcpCnq8kQDbMZYW1s-RKeT0" ,"Sheet1"]

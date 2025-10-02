@@ -1,0 +1,14 @@
+//Multiple journals / inputs
+//Multiple Tabs
+//Load:
+    //Save Functions: Add, Edit, Delete (empty entries)
+    //Load Button: Add ones that are not there <- Works
+    //Save Button: Add new OR Edit existing <- Works
+    //On close - auto save, auto delete
+    //On close window - auto save all - Can't do because of request limits
+    //Save-state indicator check
+    //Hotkey for save
+//Permanent Documents - //Seperate load sections, //Seperate Save Destinations, //Selection
+//Files, Snapshots / photos - Not necessary just use google drive
+
+Mobile Version
